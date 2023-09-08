@@ -28,11 +28,33 @@ body{
     text-align: center;
 }
 
+.pliki div{
+    -webkit-box-shadow: 8px 8px 24px 0px rgba(0, 0, 0, 1);
+    -moz-box-shadow: 8px 8px 24px 0px rgba(0, 0, 0, 1);
+    box-shadow: 8px 8px 24px 0px rgba(0, 0, 0, 1);
+    border-radius: 20px;
+    background: #ff46a27d;
+    transition: 0.55s;
+}
+
+.pliki div:hover{
+    padding: 10px;
+    border-radius: 30px;
+    transform: scale(0.95);
+}
+
+.pliki *{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: flex-start;
+    margin: 20px;
+}
+
 .pliki a{
     background-color: rgb(255, 0, 234);
-    -webkit-box-shadow: 0px 0px 25px 0px rgba(0, 0, 0, 1);
-    -moz-box-shadow: 0px 0px 25px 0px rgba(0, 0, 0, 1);
-    box-shadow: 0px 0px 25px 0px rgba(0, 0, 0, 1);
     font-weight: 400;
     color: azure;
     text-decoration: none;
@@ -41,11 +63,23 @@ body{
     border-radius: 3px;
     cursor: default;
     text-shadow: 0px 0px 25px rgba(0, 0, 0, 1);
-    transition: 1s;
+    border-style: solid;
+    border-color: rgb(255, 81, 183);
+    border-width: 2px;
+    transition: 0.55s;
 }
 .pliki a:hover{
     letter-spacing: 3px;
+    background: pink;
+    border-color: azure;
+    border-radius: 5px;
 }
 .pliki h1{
     font-weight: 300;
+}
+
+footer{
+    text-align: center;
+    background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,212,255,0) 100%);
+    padding: 10px;
 }
