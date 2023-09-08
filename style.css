@@ -9,11 +9,13 @@ body{
     margin: 0;
     color: azure;
     background: rgb(133, 0, 66);
+    user-select: none;
 }
 
 .top{
     text-align: center;
     background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(0,212,255,0) 100%);
+    text-shadow: 0px 0px 15px rgb(0, 0, 0);
     padding: 10px;
 }
 .top h1{
@@ -26,20 +28,23 @@ body{
 
 .pliki{
     text-align: center;
+    text-shadow: 0px 0px 15px rgb(0, 0, 0);
 }
 
 .pliki div{
-    -webkit-box-shadow: 8px 8px 24px 0px rgba(0, 0, 0, 1);
-    -moz-box-shadow: 8px 8px 24px 0px rgba(0, 0, 0, 1);
-    box-shadow: 8px 8px 24px 0px rgba(0, 0, 0, 1);
+    -webkit-box-shadow: inset 0px 0px 40px -15px #ff0080;
+    -moz-box-shadow: inset 0px 0px 40px -15px #ff0080;
+    box-shadow: inset 0px 0px 40px -15px #ff0080;
     border-radius: 20px;
-    background: #ff46a27d;
+    background: #ff008044;
     transition: 0.55s;
 }
 
 .pliki div:hover{
     padding: 10px;
     border-radius: 30px;
+    text-shadow: 0px 0px 15px rgba(255, 0, 128, 1);
+    color: #ffb0d8;
     transform: scale(0.95);
 }
 
@@ -73,6 +78,9 @@ body{
     background: pink;
     border-color: azure;
     border-radius: 5px;
+    -webkit-box-shadow: 0px 0px 25px 0px #ff0080;
+    -moz-box-shadow: 0px 0px 25px 0px #ff0080;
+    box-shadow: 0px 0px 25px 0px #ff0080;
 }
 .pliki h1{
     font-weight: 300;
@@ -82,4 +90,6 @@ footer{
     text-align: center;
     background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,212,255,0) 100%);
     padding: 10px;
+    text-shadow: 0px 0px 15px rgb(0, 0, 0);
+    font-weight: 300;
 }
